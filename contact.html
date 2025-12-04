@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pulse Recreation Centre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- custom styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Skip link  -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg pulse-navbar" aria-label="Primary navigation">
+      <div class="container-fluid align-items-center">
+        <!-- Logo + brand -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="images/Logo.svg" alt="Pulse Recreation Centre logo" class="pulse-logo">
+          <span class="pulse-brand-text">Pulse</span>
+        </a>
+
+        <!-- Mobile hamburger -->
+        <button class="navbar-toggler pulse-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-line"></span>
+          <span class="toggler-line"></span>
+          <span class="toggler-line"></span>
+        </button>
+
+        <!-- Collapsed nav links -->
+        <div class="collapse navbar-collapse justify-content-end" id="primaryNav">
+          <ul class="navbar-nav align-items-lg-center gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="classes.html">Classes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="membership.html">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-signin" href="signin.html">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Main content -->
+  <main id="main-content">
+<!-- Intro Section -->
+<section class="contact-intro-section">
+  <div class="container">
+
+    <!-- Logo + heading + intro text -->
+    <div class="contact-hero text-center">
+      <img
+        src="images/Logo.svg"
+        alt="Pulse Recreation Centre logo"
+        class="contact-hero-logo"
+      >
+      <h1 class="contact-title">Contact Us</h1>
+      <p class="contact-intro-text">
+        We’d love to hear from you! Whether you have a question about our
+        programs, memberships, or facilities, our team at
+        <strong>Pulse Rec Centre</strong> is here to help. Reach out today, we’ll
+        get back to you as soon as possible.
+      </p>
+    </div>
+
+    <!-- Contact methods -->
+    <div class="contact-cards">
+      <!-- Email -->
+      <article class="contact-card">
+        <div class="contact-card-inner">
+          <img
+            src="images/email.svg"
+            alt=""
+            class="contact-icon"
+          >
+          <a href="mailto:pulsereccentre@gmail.com" class="contact-card-text">
+            pulsereccentre@gmail.com
+          </a>
+        </div>
+      </article>
+
+      <!-- Phone -->
+      <article class="contact-card">
+        <div class="contact-card-inner">
+          <img
+            src="images/phone.svg"
+            alt=""
+            class="contact-icon"
+          >
+          <a href="tel:16185642902" class="contact-card-text">
+            (618) 564 2902
+          </a>
+        </div>
+      </article>
+
+      <!-- Visit -->
+      <article class="contact-card">
+        <div class="contact-card-inner">
+          <img
+            src="images/location.svg"
+            alt=""
+            class="contact-icon"
+          >
+          <p class="contact-card-text mb-0">
+            Stop and visit
+          </p>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<!-- Form section -->
+<section class="contact-form-section">
+  <div class="container">
+    <form class="contact-form" aria-label="Send a message to Pulse Rec Centre">
+      
+      <!-- Full Name  -->
+      <div class="contact-form-group contact-full-name">
+        <label for="fullName" class="contact-form-label">Full Name</label>
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          class="contact-form-control"
+          required
+        >
+      </div>
+
+      <!-- Email -->
+      <div class="contact-form-group contact-email">
+        <label for="email" class="contact-form-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="contact-form-control"
+          required
+        >
+      </div>
+
+      <!-- Phone Number -->
+      <div class="contact-form-group contact-phone">
+        <label for="phone" class="contact-form-label">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="contact-form-control"
+        >
+      </div>
+
+      <!-- Message -->
+      <div class="contact-form-group contact-message">
+        <label for="message" class="contact-form-label">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          class="contact-form-control contact-message-field"
+          required
+        ></textarea>
+      </div>
+
+      <!-- Button + note -->
+      <div class="contact-form-actions">
+        <button type="submit" class="contact-submit-btn">
+          Send a Message
+        </button>
+        <p class="contact-form-note">
+          We typically respond within 24 hours.
+        </p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Map Section -->
+
+<section class="find-way-section">
+  <div class="container">
+
+    <h2 class="find-way-title text-center">Find the way</h2>
+
+    <div class="map-container">
+      <iframe 
+        class="map-embed"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5595.784574905146!2d-75.49543472389468!3d45.471973671074124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce1235a4736289%3A0xcc1fc24824654087!2sComplexe%20r%C3%A9cr%C3%A9atif%20Ray-Friel!5e0!3m2!1sfr!2sca!4v1764877223527!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+<!-- Call to action Section -->
+<section class="cta-section">
+  <div class="cta-video-wrapper">
+
+    <!-- Background video -->
+    <video
+      class="cta-video"
+      src="images/call-to-action.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      aria-label="People enjoying a workout together at Pulse Rec Centre"
+    ></video>
+
+    <!-- Dark overlay  -->
+    <div class="cta-overlay"></div>
+
+    <!-- text -->
+    <div class="cta-content container">
+      <p class="cta-text">
+        Ready to get started?
+      </p>
+
+      <a href="membership.html" class="cta-button">
+        Join Now
+      </a>
+    </div>
+  </div>
+</section>
+  </main>
+
+    <!-- Footer  -->
+
+  <footer class="site-footer mt-5">
+    <div class="container">
+      <div class="footer-inner">
+        <!-- Logo block -->
+        <div class="footer-logo-block">
+          <img src="images/Logo.svg" alt="Pulse Recreation Centre logo" class="footer-logo-img">
+          <span class="footer-logo-text">PULSE</span>
+        </div>
+
+        <!-- Navigation + socials -->
+        <div class="footer-bottom">
+          <!-- Nav links -->
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="classes.html" class="footer-link">Classes</a>
+            <a href="membership.html" class="footer-link">Membership</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </nav>
+
+          <!-- Social icons -->
+          <div class="footer-socials" aria-label="Pulse social media">
+            <a href="#" class="footer-social-link" aria-label="Pulse on Instagram">
+              <img src="images/instagram-icon.png" alt="" class="footer-social-icon">
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Pulse on TikTok">
+              <img src="images/tiktok-icon.png" alt="" class="footer-social-icon">
+            </a>
+            <a href="mailto:info@pulserec.ca" class="footer-social-link" aria-label="Email Pulse">
+              <img src="images/email-icon.png" alt="" class="footer-social-icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS (for navbar toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+</html>
