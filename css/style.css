@@ -625,3 +625,417 @@ body {
   padding-top: 1.5rem;         /* only internal padding for footer */
 }
 
+/* About page  */
+/* Intro Section */
+.about-intro-section {
+  background-color: #edf3f7;
+  padding: 3rem 0 3.25rem;
+}
+
+/* Welcome banner */
+.about-welcome {
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+  padding: 2rem 1.5rem 2.25rem;
+  border-radius: 1.75rem;
+  background-color: #dde9f6;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.about-welcome-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+}
+
+.about-welcome-title {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--pulse-navy);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.about-welcome-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* About text + image  */
+
+.about-section-title {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--pulse-navy);
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-section-body {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.about-intro-image {
+  margin-top: 1.5rem;
+  max-width: 100%;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+
+/* Media Queries*/
+@media (min-width: 992px) {
+  .about-intro-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .about-welcome-logo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .about-welcome-title {
+    font-size: 2.3rem;
+  }
+
+  .about-welcome-text {
+    font-size: 1.05rem;
+  }
+
+  /*  image left, text right */
+  .about-intro-row {
+    margin-top: 1.5rem;
+  }
+
+  .about-intro-text {
+    order: 2;               
+    padding-left: 2rem;
+  }
+
+  .about-intro-image-col {
+    order: 1;                
+    text-align: left;
+  }
+
+  .about-section-title {
+    text-align: left;
+    font-size: 1.9rem;
+  }
+
+  .about-section-body {
+    font-size: 1.05rem;
+    max-width: 540px;
+  }
+
+  .about-intro-image {
+    margin-top: 0;
+    border-radius: 1.25rem;
+  }
+}
+
+/* Story Section */
+
+
+.about-story-section {
+  background-color: #edf3f7;        
+  padding: 2.75rem 0 3.25rem;
+}
+
+.about-story-title {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--pulse-navy);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+
+.about-story-body {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-top: 1.2rem;
+}
+
+/* Square video */
+.about-story-video-wrapper {
+  width: 100%;
+  max-width: 420px;     
+  aspect-ratio: 1 / 1;  
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background-color: #000; 
+}
+
+/* Video itself */
+.about-story-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    
+  object-position: center;
+  border-radius: inherit;
+}
+
+/* Desktop adjustments */
+@media (min-width: 992px) {
+  .about-story-video-wrapper {
+    max-width: 480px;
+    border-radius: 1.25rem;
+  }
+}
+
+/* Team Members Section */
+
+.about-team-section {
+  background-color: #edf3f7;
+  padding: 3rem 0 3.5rem;
+}
+
+.about-team-title {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--pulse-navy);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Team card  */
+.team-card {
+  background-color: #d7e6f7;
+  border-radius: 1.75rem;
+  padding: 2rem 2.25rem 2.1rem;
+  text-align: center;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.team-photo {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.team-name {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--pulse-navy);
+  font-size: 1.1rem;
+  margin-bottom: 0.1rem;
+}
+
+.team-role {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Controls + dots  */
+.team-controls {
+  margin-top: 1.75rem;
+}
+
+.team-arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.75rem;
+  border: none;
+  background-color: #d7e6f7;
+  color: var(--pulse-navy);
+  font-size: 1.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-arrow:hover,
+.team-arrow:focus-visible {
+  background-color: var(--pulse-accent);
+  color: #fff;
+}
+
+/* Dots inside the carousel indicators */
+.team-indicators {
+  position: static;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.team-indicators button {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  border: none;
+  background-color: #c4d3ea;
+}
+
+.team-indicators button.active {
+  width: 10px;
+  height: 10px;
+  background-color: var(--pulse-navy);
+}
+
+#teamCarousel .carousel-control-prev,
+#teamCarousel .carousel-control-next {
+  display: none;
+}
+
+/* Media Queries */
+@media (min-width: 992px) {
+  .about-team-section {
+    padding-top: 3.25rem;
+    padding-bottom: 4rem;
+  }
+
+  .about-team-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .team-card {
+    padding: 1.75rem 1.75rem 2rem;
+    height: 100%;
+  }
+
+  .team-photo {
+    width: 150px;
+    height: 190px;
+  }
+
+  .team-name {
+    font-size: 1rem;
+  }
+
+  .team-role {
+    font-size: 1.1rem;
+  }
+}
+
+/* Core values section */
+
+.core-values-section {
+  background-color: #edf3f7;
+  padding: 3rem 0 3.5rem;
+}
+
+.core-values-title {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--pulse-navy);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Value card */
+.value-card {
+  background-color: #d7e6f7;
+  border-radius: 1.5rem;
+  padding: 1.75rem 1.9rem 1.8rem;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+}
+
+.value-quote-mark {
+  font-size: 2.2rem;
+  color: var(--pulse-accent);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.value-heading {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--pulse-navy);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.value-text {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Carousel for mobile */
+.values-controls {
+  margin-top: 1.75rem;
+}
+
+.values-arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.75rem;
+  border: none;
+  background-color: #d7e6f7;
+  color: var(--pulse-navy);
+  font-size: 1.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.values-arrow:hover,
+.values-arrow:focus-visible {
+  background-color: var(--pulse-accent);
+  color: #fff;
+}
+
+/* Dots */
+.values-indicators {
+  position: static;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.values-indicators button {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  border: none;
+  background-color: #c4d3ea;
+}
+
+.values-indicators button.active {
+  width: 10px;
+  height: 10px;
+  background-color: var(--pulse-navy);
+}
+
+#valuesCarousel .carousel-control-prev,
+#valuesCarousel .carousel-control-next {
+  display: none;
+}
+
+/* Media Queries */
+@media (min-width: 992px) {
+  .core-values-section {
+    padding-top: 3.25rem;
+    padding-bottom: 4rem;
+  }
+
+  .core-values-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .value-card {
+    height: 100%;
+  }
+
+  .value-heading {
+    font-size: 1.35rem;
+  }
+
+  .value-text {
+    font-size: 1rem;
+  }
+}
+
+

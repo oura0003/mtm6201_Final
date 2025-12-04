@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Pulse Recreation Centre</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-  >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <!-- custom styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <!-- Skip link  -->
@@ -27,20 +25,13 @@
       <div class="container-fluid align-items-center">
         <!-- Logo + brand -->
         <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-          <img src="images/Logo.svg"
-               alt="Pulse Recreation Centre logo"
-               class="pulse-logo">
+          <img src="images/Logo.svg" alt="Pulse Recreation Centre logo" class="pulse-logo">
           <span class="pulse-brand-text">Pulse</span>
         </a>
 
         <!-- Mobile hamburger -->
-        <button class="navbar-toggler pulse-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#primaryNav"
-                aria-controls="primaryNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
+        <button class="navbar-toggler pulse-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="toggler-line"></span>
           <span class="toggler-line"></span>
           <span class="toggler-line"></span>
@@ -75,22 +66,12 @@
     <!-- Hero section with background video -->
     <section class="hero-section">
       <div class="hero-video-wrapper" aria-hidden="true">
-        <video
-          class="hero-video"
-          autoplay
-          muted
-          loop
-          playsinline
-        >
+        <video class="hero-video" autoplay muted loop playsinline>
           <!-- Desktop video -->
-          <source src="images/3327752-hd_1920_1080_24fps.mp4"
-                  type="video/mp4"
-                  media="(min-width: 768px)">
+          <source src="images/3327752-hd_1920_1080_24fps.mp4" type="video/mp4" media="(min-width: 768px)">
           <!-- Mobile video -->
-          <source src="images/3327752-hd_1920_1080_24fps.mp4"
-                  type="video/mp4"
-                  media="(max-width: 767px)">
-          
+          <source src="images/3327752-hd_1920_1080_24fps.mp4" type="video/mp4" media="(max-width: 767px)">
+
         </video>
       </div>
 
@@ -101,323 +82,299 @@
       </div>
     </section>
 
-     <!-- WHY PULSE SECTION -->
+    <!-- WHY PULSE SECTION -->
 
-     <section class="intro-section">
-    <div class="container">
-      <div class="text-center intro-header">
-        <h2 class="intro-title">Find Your Pulse.</h2>
-        <p class="intro-subtitle">Move Together At Pulse Rec Centre</p>
+    <section class="intro-section">
+      <div class="container">
+        <div class="text-center intro-header">
+          <h2 class="intro-title">Find Your Pulse.</h2>
+          <p class="intro-subtitle">Move Together At Pulse Rec Centre</p>
 
-        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-3">
-          <a href="About.html" class="btn btn-outline-pill">
-            Learn More
-          </a>
-          <a href="classes.html" class="btn btn-outline-pill">
-            Book A Class
-          </a>
+          <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-3">
+            <a href="About.html" class="btn btn-outline-pill">
+              Learn More
+            </a>
+            <a href="classes.html" class="btn btn-outline-pill">
+              Book A Class
+            </a>
+          </div>
         </div>
+
+        <!-- Image + text  -->
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 text-center text-lg-start">
+            <picture>
+              <!-- Larger image for desktop -->
+              <source srcset="images/pulse-square-650.jpg" media="(min-width: 768px)">
+              <!-- mobile image -->
+              <img src="images/pulse-square-400.jpg" width="900" height="1350" class="why-image img-fluid"
+                alt="Athlete stretching on a bright blue court at Pulse Recreation Centre">
+            </picture>
+          </div>
+
+          <!-- Text column -->
+          <div class="col-lg-6" id="why-pulse">
+            <h3 class="why-title text-center text-lg-start mb-3">
+              Why Choose Pulse?
+            </h3>
+            <p class="why-text mb-0">
+              At Pulse Rec Centre, we believe in more than just fitness.
+              We believe in community, connection, and growth. Our modern
+              facilities, inclusive programs, and dedicated team create an
+              environment where everyone feels motivated and supported.
+              Whether you’re here to build strength, find balance, or
+              connect with others, Pulse offers a welcoming space to move,
+              thrive, and feel your best.
+            </p>
+          </div>
+        </div>
+
       </div>
-
-      <!-- Image + text  -->
-      <div class="row align-items-center g-4">
-        <div class="col-lg-6 text-center text-lg-start">
-          <picture>
-            <!-- Larger image for tablets/desktop -->
-            <source
-              srcset="images/pulse-square-650.jpg"
-              media="(min-width: 768px)">
-            <!-- mobile image -->
-            <img
-              src="images/pulse-square-400.jpg"
-              width="900"
-              height="1350"
-              class="why-image img-fluid"
-              alt="Athlete stretching on a bright blue court at Pulse Recreation Centre">
-          </picture>
-        </div>
-
-        <!-- Text column -->
-        <div class="col-lg-6" id="why-pulse">
-          <h3 class="why-title text-center text-lg-start mb-3">
-            Why Choose Pulse?
-          </h3>
-          <p class="why-text mb-0">
-            At Pulse Rec Centre, we believe in more than just fitness.
-            We believe in community, connection, and growth. Our modern
-            facilities, inclusive programs, and dedicated team create an
-            environment where everyone feels motivated and supported.
-            Whether you’re here to build strength, find balance, or
-            connect with others, Pulse offers a welcoming space to move,
-            thrive, and feel your best.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </section>
+    </section>
 
 
     <!-- FACILITIES SECTION -->
 
-<section class="facilities-section">
-  <div class="container">
+    <section class="facilities-section">
+      <div class="container">
 
-    <h2 class="facilities-title text-center mb-4">
-      Our Facilities
-    </h2>
+        <h2 class="facilities-title text-center mb-4">
+          Our Facilities
+        </h2>
 
-    <div class="row gy-3 gy-lg-4">
-      <!-- Aquafit Pool -->
-      <div class="col-12 col-lg-6">
-        <article class="facility-card d-flex">
-          <img
-            src="images/aquafit-pool.png"
-            alt="Group aquafit class in an indoor pool"
-            class="facility-thumb"
-          >
-          <div class="facility-content">
-            <h3 class="facility-heading">Aquafit Pool</h3>
-            <p class="facility-text">
-              The Aquafit Pool offers refreshing, low-impact workouts that
-              improve strength and flexibility for all ages.
-            </p>
+        <div class="row gy-3 gy-lg-4">
+          <!-- Aquafit Pool -->
+          <div class="col-12 col-lg-6">
+            <article class="facility-card d-flex">
+              <img src="images/aquafit-pool.png" alt="Group aquafit class in an indoor pool" class="facility-thumb">
+              <div class="facility-content">
+                <h3 class="facility-heading">Aquafit Pool</h3>
+                <p class="facility-text">
+                  The Aquafit Pool offers refreshing, low-impact workouts that
+                  improve strength and flexibility for all ages.
+                </p>
+              </div>
+            </article>
           </div>
-        </article>
-      </div>
 
-      <!-- Indoor Track -->
-      <div class="col-12 col-lg-6">
-        <article class="facility-card d-flex">
-          <img
-            src="images/indoor-track.png"
-            alt="Indoor track with running lanes"
-            class="facility-thumb"
-          >
-          <div class="facility-content">
-            <h3 class="facility-heading">Indoor Track</h3>
-            <p class="facility-text">
-              The Indoor Track provides a safe, all-season space for walking,
-              jogging, and running at your own pace.
-            </p>
+          <!-- Indoor Track -->
+          <div class="col-12 col-lg-6">
+            <article class="facility-card d-flex">
+              <img src="images/indoor-track.png" alt="Indoor track with running lanes" class="facility-thumb">
+              <div class="facility-content">
+                <h3 class="facility-heading">Indoor Track</h3>
+                <p class="facility-text">
+                  The Indoor Track provides a safe, all-season space for walking,
+                  jogging, and running at your own pace.
+                </p>
+              </div>
+            </article>
           </div>
-        </article>
-      </div>
 
-      <!-- Fitness Studio -->
-      <div class="col-12 col-lg-6">
-        <article class="facility-card d-flex">
-          <img
-            src="images/fitness-studio.jpg"
-            alt="Modern fitness studio with equipment"
-            class="facility-thumb"
-          >
-          <div class="facility-content">
-            <h3 class="facility-heading">Fitness Studio</h3>
-            <p class="facility-text">
-              The Fitness Studio offers a modern, open space for dynamic group
-              and personal workouts.
-            </p>
+          <!-- Fitness Studio -->
+          <div class="col-12 col-lg-6">
+            <article class="facility-card d-flex">
+              <img src="images/fitness-studio.jpg" alt="Modern fitness studio with equipment" class="facility-thumb">
+              <div class="facility-content">
+                <h3 class="facility-heading">Fitness Studio</h3>
+                <p class="facility-text">
+                  The Fitness Studio offers a modern, open space for dynamic group
+                  and personal workouts.
+                </p>
+              </div>
+            </article>
           </div>
-        </article>
-      </div>
 
-      <!-- Yoga & Pilates -->
-      <div class="col-12 col-lg-6">
-        <article class="facility-card d-flex">
-          <img
-            src="images/yoga-pilates.png"
-            alt="Yoga and Pilates class in a calm studio"
-            class="facility-thumb"
-          >
-          <div class="facility-content">
-            <h3 class="facility-heading">Yoga &amp; Pilates</h3>
-            <p class="facility-text">
-              The Yoga &amp; Pilates Studio provides a peaceful space to
-              strengthen, stretch, and restore balance.
-            </p>
+          <!-- Yoga & Pilates -->
+          <div class="col-12 col-lg-6">
+            <article class="facility-card d-flex">
+              <img src="images/yoga-pilates.png" alt="Yoga and Pilates class in a calm studio" class="facility-thumb">
+              <div class="facility-content">
+                <h3 class="facility-heading">Yoga &amp; Pilates</h3>
+                <p class="facility-text">
+                  The Yoga &amp; Pilates Studio provides a peaceful space to
+                  strengthen, stretch, and restore balance.
+                </p>
+              </div>
+            </article>
           </div>
-        </article>
+        </div>
+
       </div>
-    </div>
+    </section>
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section">
+      <div class="container">
 
-  </div>
-</section>
-  <!-- TESTIMONIALS SECTION -->
-<section class="testimonials-section">
-  <div class="container">
+        <h2 class="testimonials-title text-center mb-4">
+          Testimonials
+        </h2>
 
-    <h2 class="testimonials-title text-center mb-4">
-      Testimonials
-    </h2>
+        <!-- MOBILE: carousel  -->
+        <div id="testimonialCarousel" class="carousel slide d-lg-none" data-bs-ride="false"
+          aria-label="Member testimonials">
 
-    <!-- MOBILE: carousel  -->
-    <div id="testimonialCarousel" class="carousel slide d-lg-none" data-bs-ride="false" aria-label="Member testimonials">
-
-      <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <article class="testimonial-card">
-            <div class="testimonial-quote-mark">“</div>
-            <p class="testimonial-text">
-              Joining Pulse has completely changed my routine. The community keeps me
-              motivated every day.
-            </p>
-            <div class="testimonial-person">
-              <img src="images/sarah-thampson.png" alt="Portrait of Sarah Thompson" class="testimonial-avatar">
-              <span class="testimonial-name">Sarah Thompson</span>
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <article class="testimonial-card">
+                <div class="testimonial-quote-mark">“</div>
+                <p class="testimonial-text">
+                  Joining Pulse has completely changed my routine. The community keeps me
+                  motivated every day.
+                </p>
+                <div class="testimonial-person">
+                  <img src="images/sarah-thampson.png" alt="Portrait of Sarah Thompson" class="testimonial-avatar">
+                  <span class="testimonial-name">Sarah Thompson</span>
+                </div>
+              </article>
             </div>
-          </article>
-        </div>
 
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <article class="testimonial-card">
-            <div class="testimonial-quote-mark">“</div>
-            <p class="testimonial-text">
-              The trainers are amazing and the facilities are top-notch. I really enjoy
-              working out again!
-            </p>
-            <div class="testimonial-person">
-              <img src="images/daniel-reid.png" alt="Portrait of Daniel Reid" class="testimonial-avatar">
-              <span class="testimonial-name">Daniel Reid</span>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <article class="testimonial-card">
+                <div class="testimonial-quote-mark">“</div>
+                <p class="testimonial-text">
+                  The trainers are amazing and the facilities are top-notch. I really enjoy
+                  working out again!
+                </p>
+                <div class="testimonial-person">
+                  <img src="images/daniel-reid.png" alt="Portrait of Daniel Reid" class="testimonial-avatar">
+                  <span class="testimonial-name">Daniel Reid</span>
+                </div>
+              </article>
             </div>
-          </article>
-        </div>
 
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-          <article class="testimonial-card">
-            <div class="testimonial-quote-mark">“</div>
-            <p class="testimonial-text">
-              I love how welcoming it feels here. There’s something for everyone, no matter
-              your fitness level.
-            </p>
-            <div class="testimonial-person">
-              <img src="images/elodie-jackson.jpg" alt="Portrait of Elodie Jackson" class="testimonial-avatar">
-              <span class="testimonial-name">Elodie Jackson</span>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <article class="testimonial-card">
+                <div class="testimonial-quote-mark">“</div>
+                <p class="testimonial-text">
+                  I love how welcoming it feels here. There’s something for everyone, no matter
+                  your fitness level.
+                </p>
+                <div class="testimonial-person">
+                  <img src="images/elodie-jackson.jpg" alt="Portrait of Elodie Jackson" class="testimonial-avatar">
+                  <span class="testimonial-name">Elodie Jackson</span>
+                </div>
+              </article>
             </div>
-          </article>
+          </div>
+
+          <!-- Controls -->
+          <div class="testimonial-controls mt-4">
+            <div class="d-flex justify-content-center align-items-center gap-3">
+              <button class="testi-arrow" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev"
+                aria-label="Previous testimonial">
+                &#8249;
+              </button>
+
+              <div class="carousel-indicators testimonial-indicators">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Testimonial 1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                  aria-label="Testimonial 2"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                  aria-label="Testimonial 3"></button>
+              </div>
+
+              <button class="testi-arrow" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next"
+                aria-label="Next testimonial">
+                &#8250;
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <!-- Controls -->
-      <div class="testimonial-controls mt-4">
-        <div class="d-flex justify-content-center align-items-center gap-3">
-          <button class="testi-arrow" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous testimonial">
-            &#8249;
-          </button>
-
-          <div class="carousel-indicators testimonial-indicators">
-            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
-                    class="active" aria-current="true" aria-label="Testimonial 1"></button>
-            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
-                    aria-label="Testimonial 2"></button>
-            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
-                    aria-label="Testimonial 3"></button>
+        <!-- DESKTOP -->
+        <div class="row g-4 d-none d-lg-flex mt-4">
+          <div class="col-lg-4">
+            <article class="testimonial-card">
+              <div class="testimonial-quote-mark">“</div>
+              <p class="testimonial-text">
+                Joining Pulse has completely changed my routine. The community keeps me
+                motivated every day.
+              </p>
+              <div class="testimonial-person">
+                <img src="images/sarah-thampson.png" alt="Portrait of Sarah Thompson" class="testimonial-avatar">
+                <span class="testimonial-name">Sarah Thompson</span>
+              </div>
+            </article>
           </div>
-
-          <button class="testi-arrow" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next testimonial">
-            &#8250;
-          </button>
+          <div class="col-lg-4">
+            <article class="testimonial-card">
+              <div class="testimonial-quote-mark">“</div>
+              <p class="testimonial-text">
+                The trainers are amazing and the facilities are top-notch. I really enjoy
+                working out again!
+              </p>
+              <div class="testimonial-person">
+                <img src="images/daniel-reid.png" alt="Portrait of Daniel Reid" class="testimonial-avatar">
+                <span class="testimonial-name">Daniel Reid</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4">
+            <article class="testimonial-card">
+              <div class="testimonial-quote-mark">“</div>
+              <p class="testimonial-text">
+                I love how welcoming it feels here. There’s something for everyone, no matter
+                your fitness level.
+              </p>
+              <div class="testimonial-person">
+                <img src="images/elodie-jackson.jpg" alt="Portrait of Elodie Jackson" class="testimonial-avatar">
+                <span class="testimonial-name">Elodie Jackson</span>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <!-- DESKTOP -->
-    <div class="row g-4 d-none d-lg-flex mt-4">
-      <div class="col-lg-4">
-        <article class="testimonial-card">
-          <div class="testimonial-quote-mark">“</div>
-          <p class="testimonial-text">
-            Joining Pulse has completely changed my routine. The community keeps me
-            motivated every day.
-          </p>
-          <div class="testimonial-person">
-            <img src="images/sarah-thampson.png" alt="Portrait of Sarah Thompson" class="testimonial-avatar">
-            <span class="testimonial-name">Sarah Thompson</span>
-          </div>
-        </article>
       </div>
-      <div class="col-lg-4">
-        <article class="testimonial-card">
-          <div class="testimonial-quote-mark">“</div>
-          <p class="testimonial-text">
-            The trainers are amazing and the facilities are top-notch. I really enjoy
-            working out again!
-          </p>
-          <div class="testimonial-person">
-            <img src="images/daniel-reid.png" alt="Portrait of Daniel Reid" class="testimonial-avatar">
-            <span class="testimonial-name">Daniel Reid</span>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4">
-        <article class="testimonial-card">
-          <div class="testimonial-quote-mark">“</div>
-          <p class="testimonial-text">
-            I love how welcoming it feels here. There’s something for everyone, no matter
-            your fitness level.
-          </p>
-          <div class="testimonial-person">
-            <img src="images/elodie-jackson.jpg" alt="Portrait of Elodie Jackson" class="testimonial-avatar">
-            <span class="testimonial-name">Elodie Jackson</span>
-          </div>
-        </article>
-      </div>
-    </div>
-
-  </div>
-</section>
+    </section>
   </main>
 
-<!-- Footer  -->
+  <!-- Footer  -->
 
   <footer class="site-footer mt-5">
-  <div class="container">
-    <div class="footer-inner">
-      <!-- Logo block -->
-      <div class="footer-logo-block">
-        <img
-          src="images/Logo.svg"
-          alt="Pulse Recreation Centre logo"
-          class="footer-logo-img"
-        >
-        <span class="footer-logo-text">PULSE</span>
-      </div>
+    <div class="container">
+      <div class="footer-inner">
+        <!-- Logo block -->
+        <div class="footer-logo-block">
+          <img src="images/Logo.svg" alt="Pulse Recreation Centre logo" class="footer-logo-img">
+          <span class="footer-logo-text">PULSE</span>
+        </div>
 
-      <!-- Navigation + socials (layout changes with media queries) -->
-      <div class="footer-bottom">
-        <!-- Nav links -->
-        <nav class="footer-nav" aria-label="Footer navigation">
-          <a href="classes.html" class="footer-link">Classes</a>
-          <a href="membership.html" class="footer-link">Membership</a>
-          <a href="contact.html" class="footer-link">Contact Us</a>
-        </nav>
+        <!-- Navigation + socials (layout changes with media queries) -->
+        <div class="footer-bottom">
+          <!-- Nav links -->
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="classes.html" class="footer-link">Classes</a>
+            <a href="membership.html" class="footer-link">Membership</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </nav>
 
-        <!-- Social icons -->
-        <div class="footer-socials" aria-label="Pulse social media">
-          <a href="#" class="footer-social-link" aria-label="Pulse on Instagram">
-            <img src="images/instagram-icon.png" alt="" class="footer-social-icon">
-          </a>
-          <a href="#" class="footer-social-link" aria-label="Pulse on TikTok">
-            <img src="images/tiktok-icon.png" alt="" class="footer-social-icon">
-          </a>
-          <a href="mailto:info@pulserec.ca" class="footer-social-link" aria-label="Email Pulse">
-            <img src="images/email-icon.png" alt="" class="footer-social-icon">
-          </a>
+          <!-- Social icons -->
+          <div class="footer-socials" aria-label="Pulse social media">
+            <a href="#" class="footer-social-link" aria-label="Pulse on Instagram">
+              <img src="images/instagram-icon.png" alt="" class="footer-social-icon">
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Pulse on TikTok">
+              <img src="images/tiktok-icon.png" alt="" class="footer-social-icon">
+            </a>
+            <a href="mailto:info@pulserec.ca" class="footer-social-link" aria-label="Email Pulse">
+              <img src="images/email-icon.png" alt="" class="footer-social-icon">
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 
   <!-- Bootstrap JS (for navbar toggle) -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

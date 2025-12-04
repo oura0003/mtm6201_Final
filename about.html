@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pulse Recreation Centre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Skip link  -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg pulse-navbar" aria-label="Primary navigation">
+            <div class="container-fluid align-items-center">
+                <!-- Logo + brand -->
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/Logo.svg" alt="Pulse Recreation Centre logo" class="pulse-logo">
+                    <span class="pulse-brand-text">Pulse</span>
+                </a>
+
+                <!-- Mobile hamburger -->
+                <button class="navbar-toggler pulse-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="toggler-line"></span>
+                    <span class="toggler-line"></span>
+                    <span class="toggler-line"></span>
+                </button>
+
+                <!-- Collapsed nav links -->
+                <div class="collapse navbar-collapse justify-content-end" id="primaryNav">
+                    <ul class="navbar-nav align-items-lg-center gap-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="classes.html">Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="membership.html">Membership</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-signin" href="signin.html">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+        <section class="about-intro-section">
+            <div class="container">
+
+                <!-- Welcome banner -->
+                <div class="about-welcome text-center">
+                    <img src="images/Logo.svg" alt="Pulse Recreation Centre logo" class="about-welcome-logo">
+                    <h1 class="about-welcome-title">Welcome to Pulse</h1>
+                    <p class="about-welcome-text">
+                        Welcome to Pulse Rec Centre, where fitness meets community.
+                        Join a space designed to keep you moving, connected, and inspired every day.
+                    </p>
+                </div>
+
+                <!-- About block -->
+                <div class="row align-items-center about-intro-row">
+                    <div class="col-12 col-lg-6 about-intro-text">
+                        <h2 class="about-section-title">About Pulse Rec Centre</h2>
+                        <p class="about-section-body">
+                            At Pulse Rec Centre, we believe in more than just fitness. We believe in
+                            community, connection, and growth. Our modern facilities, inclusive programs,
+                            and dedicated team create an environment where everyone feels motivated and
+                            supported.
+                        </p>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="col-12 col-lg-6 about-intro-image-col text-center">
+                        <img src="images/about-pulse.jpg" alt="Indoor court and track at Pulse Recreation Centre"
+                            class="about-intro-image img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+
+        <section class="about-story-section">
+            <div class="container">
+                <div class="row align-items-center about-story-row">
+                    <!-- Text (first for mobile) -->
+                    <div class="col-12 col-lg-6 about-story-text">
+                        <h2 class="about-story-title">Our Story</h2>
+                        <p class="about-story-body">
+                            Pulse Rec Centre was founded on the belief that wellness grows through
+                            community. What started as a small local fitness space has evolved into
+                            a modern recreation hub where people of all ages and abilities come
+                            together to move, connect, and thrive. Our team is dedicated to making
+                            fitness fun, inclusive, and accessible, helping everyone find their
+                            rhythm and live healthier lives.
+                        </p>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="col-12 col-lg-6 about-story-image-col text-center">
+                        <div class="about-story-video-wrapper">
+                            <video class="about-story-video" src="images/pulse-story.mp4" autoplay muted loop
+                                playsinline aria-label="Pulse Rec Centre activities video"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Members Section -->
+
+        <section class="about-team-section">
+            <div class="container">
+
+                <h2 class="about-team-title text-center mb-4">
+                    Our Team
+                </h2>
+
+                <!-- MOBILE carousel  -->
+                <div id="teamCarousel" class="carousel slide d-lg-none" data-bs-ride="false"
+                    aria-label="Pulse team members">
+
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <article class="team-card">
+                                <img src="images/Jordan-kim.png" alt="Portrait of Jordan Kim, Operations Manager"
+                                    class="team-photo">
+                                <p class="team-name">Jordan Kim</p>
+                                <p class="team-role">Operations Manager</p>
+                            </article>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <article class="team-card">
+                                <img src="images/emma-lewis.png"
+                                    alt="Portrait of Emma Lewis, Head Trainer and Wellness Coach" class="team-photo">
+                                <p class="team-name">Emma Lewis</p>
+                                <p class="team-role">Head Trainer &amp; Wellness Coach</p>
+                            </article>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <article class="team-card">
+                                <img src="images/Olivia-chen.png" alt="Portrait of Olivia Chen, Founder and CEO"
+                                    class="team-photo">
+                                <p class="team-name">Olivia Chen</p>
+                                <p class="team-role">Founder &amp; CEO</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Controls + indicators  -->
+                    <div class="team-controls mt-4">
+                        <div class="d-flex justify-content-center align-items-center gap-3">
+                            <!-- Prev -->
+                            <button class="team-arrow" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev"
+                                aria-label="Previous team member">
+                                &#8249;
+                            </button>
+
+                            <!-- Dots -->
+                            <div class="carousel-indicators team-indicators">
+                                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Team member 1"></button>
+                                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1"
+                                    aria-label="Team member 2"></button>
+                                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="2"
+                                    aria-label="Team member 3"></button>
+                            </div>
+
+                            <!-- Next -->
+                            <button class="team-arrow" type="button" data-bs-target="#teamCarousel" data-bs-slide="next"
+                                aria-label="Next team member">
+                                &#8250;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESKTOP -->
+                <div class="row g-4 justify-content-center d-none d-lg-flex mt-3">
+                    <div class="col-lg-4">
+                        <article class="team-card">
+                            <img src="images/Jordan-kim.png" alt="Portrait of Jordan Kim, Operations Manager"
+                                class="team-photo">
+                            <p class="team-name">Jordan Kim</p>
+                            <p class="team-role">Operations Manager</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-4">
+                        <article class="team-card">
+                            <img src="images/emma-lewis.png"
+                                alt="Portrait of Emma Lewis, Head Trainer and Wellness Coach" class="team-photo">
+                            <p class="team-name">Emma Lewis</p>
+                            <p class="team-role">Head Trainer &amp; Wellness Coach</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-4">
+                        <article class="team-card">
+                            <img src="images/Olivia-chen.png" alt="Portrait of Olivia Chen, Founder and CEO"
+                                class="team-photo">
+                            <p class="team-name">Olivia Chen</p>
+                            <p class="team-role">Founder &amp; CEO</p>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Core values section -->
+
+        <section class="core-values-section">
+            <div class="container">
+
+                <h2 class="core-values-title text-center mb-4">
+                    Core Values
+                </h2>
+
+                <!-- MOBILE: carousel -->
+                <div id="valuesCarousel" class="carousel slide d-lg-none" data-bs-ride="false"
+                    aria-label="Pulse core values">
+
+                    <div class="carousel-inner">
+                        <!-- Inclusivity -->
+                        <div class="carousel-item active">
+                            <article class="value-card">
+                                <div class="value-quote-mark">“</div>
+                                <h3 class="value-heading">Inclusivity</h3>
+                                <p class="value-text">
+                                    We welcome everyone, creating a supportive environment where
+                                    all abilities and backgrounds can thrive together.
+                                </p>
+                            </article>
+                        </div>
+
+                        <!-- Wellness -->
+                        <div class="carousel-item">
+                            <article class="value-card">
+                                <div class="value-quote-mark">“</div>
+                                <h3 class="value-heading">Wellness</h3>
+                                <p class="value-text">
+                                    We promote a balanced approach to health, focusing on both
+                                    physical fitness and mental well-being.
+                                </p>
+                            </article>
+                        </div>
+
+                        <!-- Community -->
+                        <div class="carousel-item">
+                            <article class="value-card">
+                                <div class="value-quote-mark">“</div>
+                                <h3 class="value-heading">Community</h3>
+                                <p class="value-text">
+                                    We bring people together through shared activities,
+                                    teamwork, and meaningful connections.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Controls + indicators (same pattern as testimonials) -->
+                    <div class="values-controls mt-4">
+                        <div class="d-flex justify-content-center align-items-center gap-3">
+                            <!-- Prev -->
+                            <button class="values-arrow" type="button" data-bs-target="#valuesCarousel"
+                                data-bs-slide="prev" aria-label="Previous core value">
+                                &#8249;
+                            </button>
+
+                            <!-- Dots -->
+                            <div class="carousel-indicators values-indicators">
+                                <button type="button" data-bs-target="#valuesCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Inclusivity"></button>
+                                <button type="button" data-bs-target="#valuesCarousel" data-bs-slide-to="1"
+                                    aria-label="Wellness"></button>
+                                <button type="button" data-bs-target="#valuesCarousel" data-bs-slide-to="2"
+                                    aria-label="Community"></button>
+                            </div>
+
+                            <!-- Next -->
+                            <button class="values-arrow" type="button" data-bs-target="#valuesCarousel"
+                                data-bs-slide="next" aria-label="Next core value">
+                                &#8250;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESKTOP: three cards in a row -->
+                <div class="row g-4 d-none d-lg-flex mt-3">
+                    <div class="col-lg-4">
+                        <article class="value-card">
+                            <div class="value-quote-mark">“</div>
+                            <h3 class="value-heading">Inclusivity</h3>
+                            <p class="value-text">
+                                We welcome everyone, creating a supportive environment where
+                                all abilities and backgrounds can thrive together.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-lg-4">
+                        <article class="value-card">
+                            <div class="value-quote-mark">“</div>
+                            <h3 class="value-heading">Wellness</h3>
+                            <p class="value-text">
+                                We promote a balanced approach to health, focusing on both
+                                physical fitness and mental well-being.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-lg-4">
+                        <article class="value-card">
+                            <div class="value-quote-mark">“</div>
+                            <h3 class="value-heading">Community</h3>
+                            <p class="value-text">
+                                We bring people together through shared activities,
+                                teamwork, and meaningful connections.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer  -->
+
+    <footer class="site-footer mt-5">
+        <div class="container">
+            <div class="footer-inner">
+                <!-- Logo block -->
+                <div class="footer-logo-block">
+                    <img src="images/Logo.svg" alt="Pulse Recreation Centre logo" class="footer-logo-img">
+                    <span class="footer-logo-text">PULSE</span>
+                </div>
+
+                <!-- Navigation + socials (layout changes with media queries) -->
+                <div class="footer-bottom">
+                    <!-- Nav links -->
+                    <nav class="footer-nav" aria-label="Footer navigation">
+                        <a href="classes.html" class="footer-link">Classes</a>
+                        <a href="membership.html" class="footer-link">Membership</a>
+                        <a href="contact.html" class="footer-link">Contact Us</a>
+                    </nav>
+
+                    <!-- Social icons -->
+                    <div class="footer-socials" aria-label="Pulse social media">
+                        <a href="#" class="footer-social-link" aria-label="Pulse on Instagram">
+                            <img src="images/instagram-icon.png" alt="" class="footer-social-icon">
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Pulse on TikTok">
+                            <img src="images/tiktok-icon.png" alt="" class="footer-social-icon">
+                        </a>
+                        <a href="mailto:info@pulserec.ca" class="footer-social-link" aria-label="Email Pulse">
+                            <img src="images/email-icon.png" alt="" class="footer-social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS (for navbar toggle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
